@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  background-color: #1f1f38;
+  font-family: "Poppins", sans-serif;
+}
+/* nav */
+
+.top-nav {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  z-index: 999;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #4a4eff;
+}
+
+.top-nav a {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.top-nav a:hover {
+  color: #4a4eff;
+  transform: translateY(-3px);
+}
+
+/* -------------------header----------------- */
+header {
+  padding: 5rem 2rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+header p {
+  font-size: 1.02rem;
+  margin-bottom: 0.5rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+header span {
+  font-size: 1.01rem;
+  color: rgb(147, 145, 145);
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+header span span.typing {
+  font-weight: 600;
+  color: #4db5ff;
+  font-size: 1.02rem;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+header div button {
+  padding: 1rem 2rem;
+  border: 1px solid #4db5ff;
+  border-radius: 0.5rem;
+  background: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+  color: #4db5ff;
+}
+header div button:nth-child(2) {
+  background-color: #4db5ff;
+  color: black;
+  border: none;
+}
+header div button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+/* ----------------------------about----------------- */
+.about {
+  padding: 2rem;
+}
+.about h1 {
+  font-size: 2rem;
+  color: #4db5ffd9;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 500;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.about .about-left {
+  background-color: #4db5ff;
+  padding: 1rem 3rem;
+  border-radius: 50%;
+  width: 30%;
+}
+.about .about-left img {
+  width: 100%;
+  height: auto;
+}
+.about .about-right {
+  width: 100%;
+}
+.about .about-right div p {
+  color: white;
+  font-size: 0.9rem;
+  font-family: 400;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  /* color: #2c2c6c; */
+}
+.about .about-right button {
+  padding: 1rem 2rem;
+  border: 1px solid #4db5ff;
+  border-radius: 0.5rem;
+  background: #4db5ff;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.5s ease-in-out;
+  margin-top: 2rem;
+}
+.about .about-right button a {
+  color: black;
+}
+.about .about-right button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+/* ------------------Experience----------------- */
+.experience {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.experience p {
+  font-size: 1rem;
+  color: rgb(147, 145, 145);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.experience h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4db5ff;
+  margin-bottom: 4rem;
+}
+.experience .experience-box {
+  background: #2c2c6c;
+  border: none;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  width: 600px;
+  gap: 2rem;
+  color: white;
+  width: 600px;
+  height: 400px;
+  transition: 2s ease-in-out;
+  cursor: pointer;
+}
+.experience .experience-box div p {
+  color: white;
+}
+.experience .experience-box div p i {
+  color: #4db5ff;
+}
+.experience .experience-box div span {
+  color: gray;
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+}
+/* ----------------my-project----------------------- */
+.projects {
+  padding: 3rem;
+}
+.projects p {
+  font-size: 1rem;
+  color: rgb(147, 145, 145);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.projects h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4db5ff;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.projects .projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.projects .projects-container div {
+  padding: 1rem;
+  background-color: #2c2c6c;
+  border-radius: 20px;
+}
+.projects .projects-container div img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  object-position: center;
+}
+.projects .projects-container div p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  text-align: start;
+  margin-left: 1rem;
+}
+.projects .projects-container div div {
+  display: flex;
+  gap: 1rem;
+}
+.projects .projects-container div div button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border: 1px solid #4db5ff;
+}
+.projects .projects-container div div button:nth-child(2) {
+  background-color: #4db5ff;
+}
+.projects .projects-container div div button a {
+  color: #4db5ff;
+  font-size: 1.02rem;
+}
+.projects .projects-container div div .view-project a {
+  color: black;
+}
+.projects .projects-container div div button:hover {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+/* ----------------testimonial------------------- */
+.testimonial-section {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonial-section p {
+  font-size: 1rem;
+  color: rgb(147, 145, 145);
+  font-weight: 400;
+  text-align: center;
+}
+.testimonial-section h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4db5ff;
+}
+
+.swiper {
+  max-width: 600px;
+}
+.swiper-wrapper {
+  width: 1800px !important;
+}
+
+.testimonial-card {
+  background-color: #2c2c6c;
+  border-radius: 20px;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  border: 5px solid #4a4eff;
+}
+
+.testimonial-card h3 {
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+
+.testimonial-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* -------------------contact-us---------------  */
+.contact {
+  padding: 5rem;
+}
+.contact p {
+  font-size: 1rem;
+  color: rgb(147, 145, 145);
+  font-weight: 400;
+  text-align: center;
+}
+.contact h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #4db5ff;
+}
+.contact .contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.contact .contact-content .contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact .contact-content .contact-left div {
+  background-color: #2c2c6c;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+.contact .contact-content .contact-left div i {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact .contact-content .contact-left div h1 {
+  font-size: 1.05rem;
+  color: white;
+  margin-bottom: 0;
+}
+.contact .contact-content .contact-left div p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+.contact .contact-content .contact-left div a {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #4db5ff;
+}
+.contact .contact-content .contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40%;
+}
+.contact .contact-content .contact-right input {
+  padding: 1.5rem;
+  width: 100%;
+  background: none;
+  border: 2px solid #4a4eff;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+.contact .contact-content .contact-right textarea {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+  background: none;
+  border: 2px solid #4a4eff;
+  border-radius: 10px;
+  outline: none;
+  color: white;
+}
+.contact .contact-content .contact-right button {
+  width: 30%;
+  text-align: center;
+  background-color: #4db5ff;
+  color: black;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.contact .contact-content .contact-right button:hover {
+  background-color: #ffffff;
+}
+
+/* -------------------footer------------------- */
+.footer {
+  background-color: #2c2c6c;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color 0.3s;
+}
+
+.footer-nav li a:hover {
+  color: #000;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-socials a {
+  color: #fff;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.footer-socials a:hover {
+  color: #000;
+}
+
+.footer-copy {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* --------------- Responsive ---------------- */
+
+@media (max-width: 1200px) {
+  .about .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about .about-left {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .about .about-right {
+    width: 100%;
+  }
+  .projects .projects-container {
+    flex-wrap: wrap;
+  }
+  .contact {
+    padding: 3rem 0.5rem;
+  }
+  .contact .contact-content .contact-right button {
+    width: 50%;
+  }
+}
+/* Small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 5rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  header p,
+  header span {
+    text-align: center;
+  }
+
+  header div {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about .about-left {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .about .about-right {
+    width: 100%;
+  }
+
+  .experience .experience-box {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+  }
+
+  .projects .projects-container {
+    flex-wrap: wrap;
+  }
+
+  .projects .projects-container div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .contact .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact .contact-content .contact-right {
+    width: 100%;
+  }
+
+  .contact .contact-content .contact-right button {
+    width: 100%;
+  }
+
+  .testimonial-section {
+    padding: 3rem 1rem;
+  }
+
+  .swiper {
+    max-width: 100%;
+  }
+}
+
+/* Very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .top-nav {
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .top-nav a {
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .about h1,
+  .experience h1,
+  .projects h1,
+  .testimonial-section h1,
+  .contact h1 {
+    font-size: 1.3rem;
+  }
+
+  .experience .experience-box {
+    padding: 1.5rem;
+  }
+
+  .projects .projects-container div div {
+    flex-direction: column;
+  }
+
+  .projects .projects-container div div button {
+    width: 100%;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-socials {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
